@@ -1,4 +1,19 @@
-7 Pack of T-shirts
-7 Pack of Socks
-7 Pack of Underwear
-Lucky Number 7 Graphic Tee
+tops:
+  long sleeve - $30
+  short sleeve  - $20
+
+bottoms 
+  shorts - $15
+  pants - $25
+  skirts - $15
+
+shoes 
+  running shoes - $75
+  sandles - $50
+  flipflops(slides) - 20
+
+
+outerwear:
+  trench coat - $70
+  bubble coat - $60
+  cartigans _ $30
