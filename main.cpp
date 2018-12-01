@@ -2,6 +2,7 @@
 #include "LuckyStore.h"
 #include <fstream>
 #include <sstream>
+#include <iomanip> 
 
 using namespace std;
 
