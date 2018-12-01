@@ -12,9 +12,9 @@ private:
 
 
 public:
-  StoreItem() {
-    itemName = " " ;
-    price = 0;
+  StoreItem(string i, double p) {
+    itemName = i ;
+    price = p;
   }
 
 void setItemName(string i){
