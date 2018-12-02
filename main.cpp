@@ -14,8 +14,10 @@ int main(){
   string line;
   int value;
   int total_cost;
+  int num_of_items;
   string item;
   int queueLen;
+  int item_total;
   
   
   cout << "Hello welcome to the LuckyStore! Here is what we have in stock: " << endl;
@@ -41,6 +43,34 @@ void getItemAndCost(){
   for (int i = 0, i < queuelen, i++){
     cout << "Enter Item: (CASE AND SPACE SENSITIVE!)" << endl;
     cin >> item;
+    if (item == "long sleeve"){
+      cout << "How many do you want" << endl;
+      cin >> num_of_items;
+      item_total = 30 * num_of_items;
+      total_cost += item_total
+    }
+    if (item == "short sleeve") {
+      cout << "How many do you want" << endl;
+      cin >> num_of_items;
+      item_total = 20 * num_of_items;
+      total_cost += item_total;
+    }
+    if (item == "shorts"){
+      cout << "How many do you want" << endl;
+      cin >> num_of_items;
+      item_total = 15 * num_of_items;
+      total_cost += item_total
+    }
+    if(item == "pants"){
+      cout << "How many do you want" << endl;
+      cin >> num_of_items;
+      item_total = 25 * num_of_items;
+      total_cost += item_total
+    }
+      if (item == "skirt"){
+        
+        
+        
     
     
     \\ need help attacting cost to the item. i think we should use a dictionary but i dont know how to use them 
