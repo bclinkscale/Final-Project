@@ -10,10 +10,10 @@ bottoms
 shoes 
   running shoes - $75
   sandles - $50
-  flipflops(slides) - 20
+  flipflops - 20
 
 
 outerwear:
   trench coat - $70
   bubble coat - $60
-  cartigans _ $30
+  cartigan - $30
