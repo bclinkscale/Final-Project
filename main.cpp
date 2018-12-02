@@ -11,6 +11,7 @@ int main(){
   fstream dataFile;
   string line;
   int value;
+  int total_cost;
   string item;
   int queueLen;
   
@@ -30,6 +31,7 @@ int main(){
   cin >> queueLen;
   Customer queue (queueLen);
   for (int i = 0, i < queuelen, i++){
+    cout << "What It
     
     
     
