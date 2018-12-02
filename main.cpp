@@ -32,9 +32,6 @@ int main(){
   Customer queue (queueLen);
   for (int i = 0, i < queuelen, i++){
     cout << "What It
-    
-    
-    
-
+   
 return 0;
 }
