@@ -42,4 +42,7 @@ void getItemAndCost(){
     cout << "Enter Item: (CASE AND SPACE SENSITIVE!)" << endl;
     cin >> item;
     
+    
+    \\ need help attacting cost to the item. i think we should use a dictionary but i dont know how to use them 
+    
   
