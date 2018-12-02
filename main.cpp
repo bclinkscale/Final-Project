@@ -7,6 +7,8 @@
 
 using namespace std;
 
+void getItemAndCost(int x);
+
 int main(){
   fstream dataFile;
   string line;
@@ -27,11 +29,17 @@ int main(){
   else{
     cout << "Can't read File!" << endl;
   }
+  
+   
+return 0;
+}
+  
+void getItemAndCost(){
   cout << "From the items you see, how many different clothing types do you want to buy. Type a Number (Not how many of each item you want)" << endl;
   cin >> queueLen;
   Customer queue (queueLen);
   for (int i = 0, i < queuelen, i++){
-    cout << "What It
-   
-return 0;
-}
+    cout << "Enter Item: (CASE AND SPACE SENSITIVE!)" << endl;
+    cin >> item;
+    
+  
