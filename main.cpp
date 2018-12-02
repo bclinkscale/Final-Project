@@ -1,5 +1,6 @@
 #include "Store.h"
 #include "LuckyStore.h"
+#include "Customer.h"
 #include <fstream>
 #include <sstream>
 #include <iomanip> 
@@ -9,6 +10,10 @@ using namespace std;
 int main(){
   fstream dataFile;
   string line;
+  int value;
+  string item;
+  int queueLen;
+  
   
   cout << "Hello welcome to the LuckyStore! Here is what we have in stock: " << endl;
   dataFile.open(Inventory.txt. ios::in);
@@ -20,6 +25,11 @@ int main(){
   }
   else{
     cout << "Can't read File!" << endl;
+  }
+  cout << "From the items you see, how many different clothing types do you want to buy. Type a Number (Not how many of each item you want)" << endl;
+  cin >> queueLen;
+  Customer queue (
+    
     
 
 return 0;
