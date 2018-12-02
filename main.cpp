@@ -28,7 +28,9 @@ int main(){
   }
   cout << "From the items you see, how many different clothing types do you want to buy. Type a Number (Not how many of each item you want)" << endl;
   cin >> queueLen;
-  Customer queue (
+  Customer queue (queueLen);
+  for (int i = 0, i < queuelen, i++){
+    
     
     
 
