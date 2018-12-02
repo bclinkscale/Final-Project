@@ -5,7 +5,7 @@ tops:
 bottoms 
   shorts - $15
   pants - $25
-  skirts - $15
+  skirt - $15
 
 shoes 
   running shoes - $75
