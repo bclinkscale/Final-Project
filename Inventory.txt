@@ -1,0 +1,19 @@
+tops:
+  long sleeve - $30
+  short sleeve  - $20
+
+bottoms 
+  shorts - $15
+  pants - $25
+  skirt - $15
+
+shoes 
+  running shoes - $75
+  sandles - $50
+  flipflops - 20
+
+
+outerwear:
+  trench coat - $70
+  bubble coat - $60
+  cartigan - $30
