@@ -2,7 +2,6 @@
 #define STORE_H
 
 #include <string>
-#include <stack>
 
 using namespace std;
 
@@ -20,16 +19,16 @@ public:
 
 void setItemName(string i){
   (ItemName = i;)
-}
+};
 void setPrice(double p){
   (Price = p;)
-}
+};
 string getItemName() const{
   (return ItemName;)
-}
+};
 int getPrice() const{
   (return Price;)
-}
+};
 };
 
 #endif
