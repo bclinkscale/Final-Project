@@ -7,28 +7,28 @@ using namespace std;
 
 class Store{
 private:
-  string ItemName;
-  double Price;
+  string itemName;
+  double price;
 
 
 public:
-  StoreItem(string i, double p) {
+  Store (string i, double p) {
     itemName = i ;
     price = p;
-  }
+  };
 
 void setItemName(string i){
   (ItemName = i;)
-}
+};
 void setPrice(double p){
   (Price = p;)
-}
+};
 string getItemName() const{
   (return ItemName;)
-}
+};
 int getPrice() const{
   (return Price;)
-}
+};
 };
 
 #endif
