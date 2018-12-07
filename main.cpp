@@ -72,14 +72,18 @@ void getItemAndCost(){
         cin >> num_of_items;
         item_total = 15 * num_of_items;
         total_cost += item_total;
-        
-        
-        
-        
-        
-        
+      }
+      if (item == "running shoes"{
+       cout << "How many do you want: " << endl;
+        cin >> num_of_items;
+        item_total = 75 * num_of_items; 
+        total_cost += item;
+      }
+          if (item == "
     
     
-    \\ need help attacting cost to the item. i think we should use a dictionary but i dont know how to use them 
-    
+        
+        
+        
+        
   
