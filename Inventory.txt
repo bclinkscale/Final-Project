@@ -10,7 +10,7 @@ bottoms
 shoes 
   running shoes - $75
   sandles - $50
-  flipflops - 20
+  flipflops - $20
 
 
 outerwear:
