@@ -77,9 +77,21 @@ void getItemAndCost(){
        cout << "How many do you want: " << endl;
         cin >> num_of_items;
         item_total = 75 * num_of_items; 
-        total_cost += item;
+        total_cost += item_total;
       }
-          if (item == "
+      if (item == "sandles"){
+         cout << "How many do you want: " << endl;
+          cin >> num_of_items;
+          item_total = 50 * num_of_items;
+          total_cost += item_total;
+          }
+          if (item == "flipflops"){
+            cout << "How many do you want: " << endl;
+            cin >> num_of_items;
+            item_total = 20 * num_of_items;
+            total_cost += item_total;
+          }
+          if (item =
     
     
         
