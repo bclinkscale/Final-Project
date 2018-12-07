@@ -44,30 +44,37 @@ void getItemAndCost(){
     cout << "Enter Item: (CASE AND SPACE SENSITIVE!)" << endl;
     cin >> item;
     if (item == "long sleeve"){
-      cout << "How many do you want" << endl;
+      cout << "How many do you want: " << endl;
       cin >> num_of_items;
       item_total = 30 * num_of_items;
       total_cost += item_total
     }
     if (item == "short sleeve") {
-      cout << "How many do you want" << endl;
+      cout << "How many do you want: " << endl;
       cin >> num_of_items;
       item_total = 20 * num_of_items;
       total_cost += item_total;
     }
     if (item == "shorts"){
-      cout << "How many do you want" << endl;
+      cout << "How many do you want: " << endl;
       cin >> num_of_items;
       item_total = 15 * num_of_items;
       total_cost += item_total
     }
     if(item == "pants"){
-      cout << "How many do you want" << endl;
+      cout << "How many do you want: " << endl;
       cin >> num_of_items;
       item_total = 25 * num_of_items;
       total_cost += item_total
     }
       if (item == "skirt"){
+        cout << "How many do you want: " << endl; 
+        cin >> num_of_items;
+        item_total = 15 * num_of_items;
+        total_cost += item_total;
+        
+        
+        
         
         
         
