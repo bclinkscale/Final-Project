@@ -91,7 +91,13 @@ void getItemAndCost(){
             item_total = 20 * num_of_items;
             total_cost += item_total;
           }
-          if (item =
+          if (item == "trench coat"){
+            item_total = 70 * num_of_items;
+          }
+          if (item == "bubble coat") {
+            item_total = 60 * num_of_items;
+          }
+          if (item == "cartigan"
     
     
         
