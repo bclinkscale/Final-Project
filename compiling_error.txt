@@ -1,0 +1,28 @@
+/home/dexisidus/Documents/COSC237/Final-Project/Customer.cpp: In copy constructor ‘Customer::Customer(const Customer&)’:
+/home/dexisidus/Documents/COSC237/Final-Project/Customer.cpp:22:21: error: no matching function for call to ‘Customer::Customer()’
+ Customer::~Customer(){             // destructor
+                     ^
+In file included from /home/dexisidus/Documents/COSC237/Final-Project/Customer.cpp:1:0:
+/home/dexisidus/Documents/COSC237/Final-Project/Customer.h:21:3: note: candidate: Customer::~Customer()
+   ~Customer(); // deconstructor
+   ^
+/home/dexisidus/Documents/COSC237/Final-Project/Customer.h:21:3: note:   candidate expects 1 argument, 0 provided
+/home/dexisidus/Documents/COSC237/Final-Project/Customer.cpp:26:22: error: qualified-id in declaration before ‘(’ token
+ bool Customer::isFull() const{
+                      ^
+/home/dexisidus/Documents/COSC237/Final-Project/Customer.cpp:36:23: error: qualified-id in declaration before ‘(’ token
+ bool Customer::isEmpty() const{
+                       ^
+/home/dexisidus/Documents/COSC237/Final-Project/Customer.cpp:45:27: error: qualified-id in declaration before ‘(’ token
+ void Customer::add_to_cart(string i){
+                           ^
+/home/dexisidus/Documents/COSC237/Final-Project/Customer.cpp:69:1: error: expected ‘}’ at end of input
+ }
+ ^
+/home/dexisidus/Documents/COSC237/Final-Project/main.cpp: In function ‘int main()’:
+/home/dexisidus/Documents/COSC237/Final-Project/main.cpp:42:50: error: found ‘:’ in nested-name-specifier, expected ‘::’
+   cout << "Enter CVV number (3 digits): " << endl:
+                                                  ^
+/home/dexisidus/Documents/COSC237/Final-Project/main.cpp:42:46: error: ‘endl’ is not a class, namespace, or enumeration
+   cout << "Enter CVV number (3 digits): " << endl:
+                                              ^~~~
