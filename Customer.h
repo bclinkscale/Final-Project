@@ -5,7 +5,6 @@
 #include <string>
 
 using namespace std;
-
 class Customer{
 private:
   //Creating a queue to hold the items inside the cart
@@ -20,8 +19,8 @@ public:
   Customer(const Customer &); // copy constructor
   ~Customer(); // deconstructor
   //Functions that will allow the user to manipulate the items inside the cart
-  void add_to_cart(string); // enqueue
-  void remove_from_cart(string &); // dequeue
+  void add_to_cart(int); // enqueue
+  void remove_from_cart(string &);
   bool isEmpty() const; // check to see if empty
   bool isFull() const; // check to see if empty
   void clear_Cart();

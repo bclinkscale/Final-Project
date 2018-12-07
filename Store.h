@@ -2,6 +2,7 @@
 #define STORE_H
 
 #include <string>
+#include <stack>
 
 using namespace std;
 
@@ -14,7 +15,7 @@ private:
 public:
   Store();
   Store(string, double);
-  
+
   void setItemName(string i){
     itemName = i;
 
