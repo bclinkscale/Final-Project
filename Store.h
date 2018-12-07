@@ -2,33 +2,68 @@
 #define STORE_H
 
 #include <string>
+#include <stack>
 
 using namespace std;
 
 class Store{
 private:
-  string ItemName;
-  double Price;
+  string itemName;
+  double price;
 
 
 public:
-  StoreItem(string i, double p) {
+  Store (string i, double p) {
     itemName = i ;
     price = p;
-  }
+  };
 
-void setItemName(string i){
-  (ItemName = i;)
-}
-void setPrice(double p){
-  (Price = p;)
-}
-string getItemName() const{
-  (return ItemName;)
-}
-int getPrice() const{
-  (return Price;)
-}
+void setItemName(string i)
+{itemName = i;}
+
+void setPrice(double p)
+{price = p;}
+
+string getItemName() const
+{return itemName;}
+
+int getPrice() const
+{return price;}
+
+};
+
+#endif#ifndef STORE_H
+#define STORE_H
+
+#include <string>
+#include <stack>
+
+using namespace std;
+
+class Store{
+private:
+  string itemName;
+  double price;
+
+
+public:
+  Store (string i, double p) {
+    itemName = i ;
+    price = p;
+  };
+
+void setItemName(string i)
+{itemName = i;}
+
+void setPrice(double p)
+{price = p;}
+
+string getItemName() const
+{return itemName;}
+
+int getPrice() const
+{return price;}
+
 };
 
 #endif
