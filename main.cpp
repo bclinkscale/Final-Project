@@ -57,37 +57,43 @@ void getItemAndCost(){
       cout << "How many do you want: " << endl;
       cin >> num_of_items;
       item_total = 30 * num_of_items;
-      total_cost += item_total
+      total_cost += item_total;
+      queue.add_to_cart(item);
     }
     if (item == "short sleeve") {
       cout << "How many do you want: " << endl;
       cin >> num_of_items;
       item_total = 20 * num_of_items;
       total_cost += item_total;
+      queue.add_to_cart(item);
     }
     if (item == "shorts"){
       cout << "How many do you want: " << endl;
       cin >> num_of_items;
       item_total = 15 * num_of_items;
-      total_cost += item_total
+      total_cost += item_total;
+      queue.add_to_cart(item);
     }
     if(item == "pants"){
       cout << "How many do you want: " << endl;
       cin >> num_of_items;
       item_total = 25 * num_of_items;
-      total_cost += item_total
+      total_cost += item_total;
+      queue.add_to_cart(item);
     }
       if (item == "skirt"){
         cout << "How many do you want: " << endl; 
         cin >> num_of_items;
         item_total = 15 * num_of_items;
         total_cost += item_total;
+        queue.add_to_cart(item);
       }
       if (item == "running shoes"{
        cout << "How many do you want: " << endl;
         cin >> num_of_items;
         item_total = 75 * num_of_items; 
         total_cost += item_total;
+        queue.add_to_cart(item);
       }
       if (item == "sandles"){
          cout << "How many do you want: " << endl;
@@ -100,24 +106,28 @@ void getItemAndCost(){
             cin >> num_of_items;
             item_total = 20 * num_of_items;
             total_cost += item_total;
+            queue.add_to_cart(item);
           }
           if (item == "trench coat"){
             cout << "How many do you want: " << endl;
             cin >> num_of_items;
             item_total = 70 * num_of_items;
             total_cost += item_total;
+            queue.add_to_cart(item);
           }
           if (item == "bubble coat") {
             cout << "How many do you want: " << endl;
             cin >> num_of_items;
             item_total = 60 * num_of_items;
             total_cost += item_total;
+            queue.add_to_cart(item);
           }
           if (item == "cartigan"){
             cout << "How many do you want: " << endl;
             cin >> num_of_items;
             item_total = 30 * num_of_items;
             total_cost = item_total;
+            queue.add_to_cart(item);
           }
           }
     
