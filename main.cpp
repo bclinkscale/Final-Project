@@ -18,6 +18,9 @@ int main(){
   string item;
   int queueLen;
   int item_total;
+  int card_number;
+  int exp_date;
+  int cvv;
   
   
   cout << "Hello welcome to the LuckyStore! Here is what we have in stock: " << endl;
@@ -31,8 +34,15 @@ int main(){
   else{
     cout << "Can't read File!" << endl;
   }
-  
-   
+  getItemAndCost();
+  cout << "Enter Card number (16 digits): " << endl;
+  cin >> card_number;
+  cout << "Enter expiration date (4 digits): " << endl;
+  cin >> exp_date;
+  cout << "Enter CVV number (3 digits): " << endl:
+  cin >> cvv; 
+  cout << "Processing..." << endl;
+  cout << "Your card has been accepted" << endl;
 return 0;
 }
   
@@ -92,13 +102,24 @@ void getItemAndCost(){
             total_cost += item_total;
           }
           if (item == "trench coat"){
+            cout << "How many do you want: " << endl;
+            cin >> num_of_items;
             item_total = 70 * num_of_items;
+            total_cost += item_total;
           }
           if (item == "bubble coat") {
+            cout << "How many do you want: " << endl;
+            cin >> num_of_items;
             item_total = 60 * num_of_items;
+            total_cost += item_total;
           }
-          if (item == "cartigan"
-    
+          if (item == "cartigan"){
+            cout << "How many do you want: " << endl;
+            cin >> num_of_items;
+            item_total = 30 * num_of_items;
+            total_cost = item_total;
+          }
+          }
     
         
         
