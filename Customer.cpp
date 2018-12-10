@@ -2,7 +2,7 @@
 #include <iostream>
 
 Customer::Customer(int i){
-  queueArray = new int[i];
+  queueArray = new string[i];
   queueLen = i;
   front = -1;
   rear = -1;
@@ -10,7 +10,7 @@ Customer::Customer(int i){
 }
 
 Customer::Customer(const Customer &item){
-  queueArray = new int[item.queueLen];
+  queueArray = new string[item.queueLen];
   queueLen = item.queueLen;
   front = item.front;
   rear = item.rear;

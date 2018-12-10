@@ -2,8 +2,6 @@
 #define LUCKYSTORE_H
 
 #include "Store.h"
-#include <map>
-#include <tuple>
 #include <fstream>
 #include <iostream>
 
@@ -11,14 +9,19 @@ using namespace std;
 
 class LuckyStore : public Store{
 private:
+  struct Inventory{
+    string item;
+    double cost;
+    int count;
+    struct Inventory *next;
+  };
+
+  Inventory *head;
   string name;
-  //These are dictionaries that will hold the prices and inventorys after reading from the file.
-  //Inventory stores tuple(item cost, count of item)
-  map <string, tuple<double, int>> inventory;
 public:
   LuckyStore();
-  void retrieve_inventory();
-  void remove_inventory(string, int);
+  void append_node(string, double, int);
+  void read_inventory();
   void display_inventory();
 };
 #endif

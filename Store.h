@@ -8,30 +8,20 @@ using namespace std;
 
 class Store{
 private:
-  string itemName;
-  double price;
-
-
+  struct Checkout{
+      string item_name;
+      double price;
+      int count;
+      struct Checkout *next;
+  };
+  Checkout *head;
+  double total;
 public:
   Store();
-  Store(string, double);
-
-  void setItemName(string i){
-    itemName = i;
-
-  }
-
-  void setPrice(double p){
-    price = p;
-  };
-
-  string getItemName() const{
-    return itemName;
-  }
-
-  int getPrice() const{
-    return price;
-  }
+  void append_node(string, double, int);
+  void display_checkout() const;
+  void calculate_total() const;
+  double show_total();
 };
 
 #endif
