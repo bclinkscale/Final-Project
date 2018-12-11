@@ -74,3 +74,26 @@ void LuckyStore::display_inventory() const{
     nodePtr = nodePtr->next;
   }
 }
+
+double LuckyStore::get_item_price(string i){
+  Inventory *nodePtr;
+
+  nodePtr = head;
+
+  while(nodePtr->item != i){
+    nodePtr = nodePtr->next;
+  }
+  return nodePtr->cost;
+}
+
+void LuckyStore::remove_from_inventory(int i, string n){
+  Inventory *nodePtr;
+
+  nodePtr = head;
+
+  while(nodePtr->item != n){
+    nodePtr = nodePtr->next;
+  }
+
+  nodePtr->count -= i;
+}

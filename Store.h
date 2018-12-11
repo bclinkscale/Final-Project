@@ -20,7 +20,6 @@ public:
   void append_node(string, double, int);
   double get_total();
   void display_checkout() const;
-  void calculate_total();
 };
 
 #endif

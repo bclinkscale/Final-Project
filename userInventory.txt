@@ -1,18 +1,18 @@
 tops
-1)  long-sleeve -------- $30----- 7 left
+1) long-sleeve -------- $30 ----- 7 left
 2) short-sleeve -------- $20 --- 7 left
 
 bottoms
 1) shorts -------- $15 -------- 7 left
 2) pants -------- $25 -------- 7 left
-skirt -------- $15 -------- 7 left
+3) skirt -------- $15 -------- 7 left
 
 footwear
-running-shoes -------- $75 -------- 7 left
-sandles -------- $50 -------- 7 left
-flipflops -------- $20 -------- 7 left
+1) running-shoes -------- $75 -------- 7 left
+2) sandles -------- $50 -------- 7 left
+3) flipflops -------- $20 -------- 7 left
 
 outerwear
-trench-coat -------- $70 -------- 7 left
-bubble-coat -------- $60 -------- 7 left
-cartigan -------- $30 -------- 7 left
+1) trench-coat -------- $70 -------- 7 left
+2) bubble-coat -------- $60 -------- 7 left
+3) cartigan -------- $30 -------- 7 left

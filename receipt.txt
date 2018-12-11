@@ -1,0 +1,5 @@
+Your Receipt
+long-sleeve Quantity: 2 ------- $60
+short-sleeve Quantity: 3 ------- $60
+sub total: $120
+total (tax): $127.2

@@ -23,5 +23,7 @@ public:
   void append_node(string, double, int);
   void read_inventory();
   void display_inventory() const;
+  double get_item_price(string);
+  void remove_from_inventory(int, string);
 };
 #endif

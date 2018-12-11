@@ -1,5 +1,6 @@
 #include "Store.h"
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
@@ -35,29 +36,26 @@ void Store::append_node(string i, double p, int c){
 
 void Store::display_checkout() const{
   Checkout *nodePtr;
-
+  double t;
+  fstream r;
   nodePtr = head;
 
-  while (nodePtr){
-    cout << nodePtr->item_name << "------- $" << nodePtr->price << endl;
+  r.open("receipt.txt", ios::out);
+  if (r.is_open()){
+    r << "Your Receipt" << endl;
+    while (nodePtr){
+      r << "Item: " << nodePtr->item_name << " Quantity: " << nodePtr->count << " ------- $" << nodePtr->price << endl;
+      t += nodePtr->price;
 
-    nodePtr = nodePtr->next;
+      nodePtr = nodePtr->next;
+    }
+    r << "sub total: $" << t << endl;
+    t += (t*.06);
+    r << "total (tax): $" << t << endl;
+    r.close();
   }
 }
 
 double Store::get_total(){
   return total;
-}
-
-void Store::calculate_total(){
-  Checkout *nodePtr;
-  double t;
-  nodePtr = head;
-
-  while(nodePtr){
-    t += (nodePtr->price * nodePtr->count);
-
-    nodePtr = nodePtr->next;
-  }
-  total = t;
 }
