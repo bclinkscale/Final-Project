@@ -19,6 +19,8 @@ int main(){
   int cvv;
 
   LuckyStore Lucky;
+  Lucky.read_inventory();
+  Lucky.display_inventory();
 
   cout << "Hello welcome to the LuckyStore! Here is what we have in stock: " << endl;
   dataFile.open("userInventory.txt", ios::in);

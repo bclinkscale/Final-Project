@@ -5,6 +5,7 @@ using namespace std;
 
 Store::Store(){
   head = nullptr;
+
   total = 0.0;
 }
 
@@ -44,7 +45,11 @@ void Store::display_checkout() const{
   }
 }
 
-void Store::calculate_total() const{
+double Store::get_total(){
+  return total;
+}
+
+void Store::calculate_total(){
   Checkout *nodePtr;
   double t;
   nodePtr = head;
@@ -55,8 +60,4 @@ void Store::calculate_total() const{
     nodePtr = nodePtr->next;
   }
   total = t;
-}
-
-double Store::show_total(){
-  return total;
 }

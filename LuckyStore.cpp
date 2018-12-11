@@ -16,11 +16,22 @@ void LuckyStore::read_inventory(){
   double cost;
   int count;
   string line;
+  string s_cost;
+  string s_count;
 
   dataFile.open("Inventory.txt", ios::in);
   if (dataFile.is_open()){
     while(getline(dataFile, line)){
+      getline(dataFile, item_name, '|');
+      getline(dataFile, s_cost, '|');
+      getline(dataFile, s_count, '|');
 
+      stringstream convert(s_cost);
+      convert >> cost;
+      stringstream convert2(s_count);
+      convert2 >> count;
+
+      append_node(item_name, cost, count);
     }
     dataFile.close();
   }else{
@@ -56,7 +67,7 @@ void LuckyStore::display_inventory(){
   Inventory *nodePtr;
 
   while (nodePtr){
-    cout << nodePtr->item << "------ $" << nodePtr->cost << " -------" << nodePtr->count << endl;
+    cout << nodePtr->item << "------ $" << nodePtr->cost << " ------- " << nodePtr->count << endl;
 
     nodePtr = nodePtr->next;
   }

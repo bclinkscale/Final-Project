@@ -2,7 +2,6 @@
 #define STORE_H
 
 #include <string>
-#include <stack>
 
 using namespace std;
 
@@ -19,9 +18,9 @@ private:
 public:
   Store();
   void append_node(string, double, int);
+  double get_total();
   void display_checkout() const;
-  void calculate_total() const;
-  double show_total();
+  void calculate_total();
 };
 
 #endif
