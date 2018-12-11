@@ -22,6 +22,6 @@ public:
   LuckyStore();
   void append_node(string, double, int);
   void read_inventory();
-  void display_inventory();
+  void display_inventory() const;
 };
 #endif
